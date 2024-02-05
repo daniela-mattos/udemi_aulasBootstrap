@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+    <style type="text/css">
+      .marcador {
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+      }
+
+      .marcador-container {
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container marcador-container">
+      <h1>Conteúdo do site</h1>
+      <p>Observar a mudança dos espaços das colunas. Conforme passa pelos break points de tamanho de tela, vai mudando os espaçamentos. Todos tem como padrão col-6, que deixa meio a meio. Conforme muda o tamanho da tela, vai mudando esses espaçamentos.</p>
+
+      <h3>Usando col-sm</h3>
+      <p>vai mudar quando o dispositivo for pequeno</p>
+      <div class="row">
+        <!-- row utiliza uma coluna
+          "col-" pode ser de 1 a 12 e estabelece a quantidade de espaço que vai ocupar do grid -->
+        <div class="marcador col-6 col-sm-2">Área 1 </div> 
+        <div class="marcador col-6 col-sm-10">Área 2 </div> 
+        
+      </div>
+
+      <br><br>
+      <h3>Usando col-md</h3>
+      <p>vai mudar quando o dispositivo for médio</p>
+      <div class="row">
+        <!-- row utiliza uma coluna
+          "col-" pode ser de 1 a 12 e estabelece a quantidade de espaço que vai ocupar do grid -->
+        <div class="marcador col-6 col-md-10">Área 1 </div> 
+        <div class="marcador col-6 col-md-2">Área 2 </div> 
+        
+      </div>
+
+      <br><br>
+      <h3>Usando col-lg</h3>
+      <p>vai mudar quando o dispositivo for grande</p>
+      <div class="row">
+        <!-- row utiliza uma coluna
+          "col-" pode ser de 1 a 12 e estabelece a quantidade de espaço que vai ocupar do grid -->
+        <div class="marcador col-6 col-lg-2">Área 1 </div> 
+        <div class="marcador col-6 col-lg-10">Área 2 </div> 
+        
+      </div>
+
+      <br><br>
+      <h3>Usando col-lg</h3>
+      <p>vai mudar quando o dispositivo for extra grande</p>
+      <div class="row">
+        <!-- row utiliza uma coluna
+          "col-" pode ser de 1 a 12 e estabelece a quantidade de espaço que vai ocupar do grid -->
+        <div class="marcador col-6 col-xl-10">Área 1 </div> 
+        <div class="marcador col-6 col-xl-2">Área 2 </div> 
+        
+      </div>
+
+      <br><br>
+      <h3>Usando col -sm -md -lg -xl</h3>
+      <p>vai mudar quando o dispositivo for grande</p>
+      <div class="row">
+        <!-- row utiliza uma coluna
+          "col-" pode ser de 1 a 12 e estabelece a quantidade de espaço que vai ocupar do grid -->
+        <div class="marcador col-6 col-sm-2 col-md-10 col-lg-2 col-xl-10">Área 1 </div> 
+        <div class="marcador col-6 col-sm-10 col-md-2 col-lg-10 col-xl-2">Área 2 </div> 
+        
+      </div>
+      <br><br>
+      <h3>Usando col-md e col-xl</h3>
+      <p>vai mudar de acordo com o tamanho. Deixando col-6 em cada, ele fica em uma coluna no pequeno, duas no medio e quando o dispositivo for grande - três áreas de mesmo tamanho - e a partir de lg fica dividido em três</p>
+      <div class="row">
+        <!-- row utiliza uma coluna
+          "col-" pode ser de 1 a 12 e estabelece a quantidade de espaço que vai ocupar do grid -->
+        <div class="marcador col-md-6 col-xl-4">Área 1 
+          <h2>Qualquer coisa pra constar</h2>
+          <p>Aqui o parágrafo para simular um parágrafo dentro de um item de área marcado com col-md-6 para ver o comportamento do conteúdo em itens desse tipo.</p>
+          <button class="btn btn-warning m-3">Leia mais</button>
+
+        </div> 
+        <div class="marcador col-md-6 col-xl-4">Área 2 
+          <h2>Qualquer coisa pra constar</h2>
+          <p>Aqui o parágrafo para simular um parágrafo dentro de um item de área marcado com col-md-6 para ver o comportamento do conteúdo em itens desse tipo.</p>
+          <button class="btn btn-warning m-3">Leia mais</button>
+        </div> 
+
+        <div class="marcador col-md-6 col-xl-4">Área 2 
+          <h2>Qualquer coisa pra constar</h2>
+          <p>Aqui o parágrafo para simular um parágrafo dentro de um item de área marcado com col-md-6 para ver o comportamento do conteúdo em itens desse tipo.</p>
+          <button class="btn btn-warning m-3">Leia mais</button>
+        </div> 
+        <div class="marcador col-md-6 col-xl-4">Área 2 
+          <h2>Qualquer coisa pra constar</h2>
+          <p>Aqui o parágrafo para simular um parágrafo dentro de um item de área marcado com col-md-6 para ver o comportamento do conteúdo em itens desse tipo.</p>
+
+          <p>A imagem também ficou com class col para ficar no limite da coluna. Sem essa classe, a imagem estrapola os grids, fica no tamanho total.</p>
+          <img class="col pb-3" src="teclado.jpg" alt="">
+          <button class="btn btn-warning m-3">Leia mais</button>
+        </div> 
+        
+      </div>
+      <br><br>
+    </div>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
